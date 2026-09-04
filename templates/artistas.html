@@ -1,0 +1,683 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="page-hero">
+    <div class="container">
+        <span class="hero-tag">Vozes em Cena</span>
+        <h1>Artistas</h1>
+        <p>
+            Vozes femininas negras que utilizam o trap brasileiro como
+            espaço de expressão, resistência e afirmação de identidade.
+            Clique em <strong>Analisar</strong> na faixa de cada artista
+            para ver a leitura da música à luz da pesquisa.
+        </p>
+    </div>
+</section>
+
+<div class="container">
+
+    <div class="row g-4">
+
+        <!-- ===================== TASHA & TRACIE ===================== -->
+        <div class="col-md-6 col-lg-3">
+            <div class="artist-card">
+                <div class="artist-avatar">
+                    <div class="artist-avatar">
+                        <img src="{{ url_for('static', filename='img/tasha.jpg') }}" alt="Tasha & Tracie">
+</div>
+                </div>
+                <div class="artist-body">
+                    <span class="artist-tag">Dupla</span>
+                    <h3>Tasha &amp; Tracie</h3>
+                    <p>
+                        Gêmeas e MCs paulistanas que trazem discursos sobre
+                        liberdade, autoestima e afirmação da mulher negra
+                        no rap e no trap.
+                    </p>
+                    <div class="artist-track">
+                        <a href="https://open.spotify.com/intl-pt/track/5zooAT8my0NlTSoZgs92ac?si=aed4c0d65b34438a" class="track-link" target="_blank" rel="noopener" title="Abrir no Spotify"><i class="bi bi-music-note-beamed"></i> Karisma <i class="bi bi-spotify"></i></a>
+                        <button type="button" class="btn-analisar" data-bs-toggle="modal" data-bs-target="#modalKarisma">
+                            <i class="bi bi-bar-chart-fill"></i> Analisar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== DUQUESA ===================== -->
+        <div class="col-md-6 col-lg-3">
+            <div class="artist-card">
+                <div class="artist-avatar">
+                    <img src="{{ url_for('static', filename='img/Duquesa.jpg') }}" alt="Tasha & Tracie">
+                </div>
+                <div class="artist-body">
+                    <span class="artist-tag">Solo</span>
+                    <h3>Duquesa</h3>
+                    <p>
+                        Uma das principais referências do trap feminino
+                        brasileiro, com letras marcadas por autoconfiança,
+                        ostentação e crítica social.
+                    </p>
+                    <div class="artist-track">
+                        <a href="https://open.spotify.com/intl-pt/track/6YSAbJ9fQCMYcCqaYwSIph?si=2e9c45fbbada48a1" class="track-link" target="_blank" rel="noopener" title="Abrir no Spotify"><i class="bi bi-music-note-beamed"></i> Big D!!!!! <i class="bi bi-spotify"></i></a>
+                        <button type="button" class="btn-analisar" data-bs-toggle="modal" data-bs-target="#modalBigD">
+                            <i class="bi bi-bar-chart-fill"></i> Analisar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== KAROL CONKÁ ===================== -->
+        <div class="col-md-6 col-lg-3">
+            <div class="artist-card">
+                <div class="artist-avatar">
+                    <img src="{{ url_for('static', filename='img/Karol.jpg') }}" alt="Tasha & Tracie">
+                </div>
+                <div class="artist-body">
+                    <span class="artist-tag">Solo</span>
+                    <h3>Karol Conká</h3>
+                    <p>
+                        Rapper e cantora curitibana, referência do rap e do
+                        trap nacional, com produções que discutem
+                        empoderamento e desigualdade social.
+                    </p>
+                    <div class="artist-track">
+                        <a href="https://open.spotify.com/intl-pt/track/2munsJnflycsB0jAPgDxaU?si=b7da304f63804d3d" class="track-link" target="_blank" rel="noopener" title="Abrir no Spotify"><i class="bi bi-music-note-beamed"></i> Dilúvio <i class="bi bi-spotify"></i></a>
+                        <button type="button" class="btn-analisar" data-bs-toggle="modal" data-bs-target="#modalDiluvio">
+                            <i class="bi bi-bar-chart-fill"></i> Analisar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== EBONY ===================== -->
+        <div class="col-md-6 col-lg-3">
+            <div class="artist-card">
+                <div class="artist-avatar">
+                    <img src="{{ url_for('static', filename='img/Ebony.jpg') }}" alt="Tasha & Tracie">
+                </div>
+                <div class="artist-body">
+                    <span class="artist-tag">Solo</span>
+                    <h3>Ebony</h3>
+                    <p>
+                        Artista que questiona a estrutura do rap e do trap
+                        pensada historicamente para homens, com narrativas
+                        sobre memória, infância e resistência.
+                    </p>
+                    <div class="artist-track">
+                        <a href="https://open.spotify.com/intl-pt/track/6KINgKuBfCGZR6DMoJIO9H?si=b4b0fefec09548a4" class="track-link" target="_blank" rel="noopener" title="Abrir no Spotify"><i class="bi bi-music-note-beamed"></i> Não lembro da minha infância <i class="bi bi-spotify"></i></a>
+                        <button type="button" class="btn-analisar" data-bs-toggle="modal" data-bs-target="#modalInfancia">
+                            <i class="bi bi-bar-chart-fill"></i> Analisar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== AJULIACOSTA ===================== -->
+        <div class="col-md-6 col-lg-3">
+            <div class="artist-card">
+                <div class="artist-avatar">
+                    <img src="{{ url_for('static', filename='img/Julia.jpg') }}" alt="Tasha & Tracie">
+                </div>
+                <div class="artist-body">
+                    <span class="artist-tag">Solo</span>
+                    <h3>Julia Costa</h3>
+                    <p>
+                        Júlia Costa, rapper paulista que começou em
+                        batalhas de rima e hoje é uma das principais vozes
+                        da nova geração do rap nacional, unindo música e
+                        moda em um projeto de representatividade.
+                    </p>
+                    <div class="artist-track">
+                        <a href="https://open.spotify.com/intl-pt/track/7LzAlJ41rNAtvLJZC7xnks?si=3ca2e57c88a448b6" class="track-link" target="_blank" rel="noopener" title="Abrir no Spotify"><i class="bi bi-music-note-beamed"></i> O que a Júlia vai ser <i class="bi bi-spotify"></i></a>
+                        <button type="button" class="btn-analisar" data-bs-toggle="modal" data-bs-target="#modalJulia">
+                            <i class="bi bi-bar-chart-fill"></i> Analisar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== NANDA TSUNAMI ===================== -->
+        <div class="col-md-6 col-lg-3">
+            <div class="artist-card">
+                <div class="artist-avatar">
+                    <img src="{{ url_for('static', filename='img/Nanda.jpg') }}" alt="Tasha & Tracie">
+                </div>
+                <div class="artist-body">
+                    <span class="artist-tag">Solo</span>
+                    <h3>Nanda Tsunami</h3>
+                    <p>
+                        Fernanda Santana, cantora e MC paulistana que
+                        transita entre rap, trap e funk, usando a
+                        sexualidade e a autoestima como ferramentas de
+                        empoderamento feminino.
+                    </p>
+                    <div class="artist-track">
+                        <a href="https://open.spotify.com/intl-pt/track/5L0d4gFfxGNITmevcFfHnA?si=a0987b2432794fc9" class="track-link" target="_blank" rel="noopener" title="Abrir no Spotify"><i class="bi bi-music-note-beamed"></i> P.I.T.T.Y. <i class="bi bi-spotify"></i></a>
+                        <button type="button" class="btn-analisar" data-bs-toggle="modal" data-bs-target="#modalPitty">
+                            <i class="bi bi-bar-chart-fill"></i> Analisar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== MC LUANNA ===================== -->
+        <div class="col-md-6 col-lg-3">
+            <div class="artist-card">
+                <div class="artist-avatar">
+                    <img src="{{ url_for('static', filename='img/Luanna.jpg') }}" alt="Tasha & Tracie">
+                </div>
+                <div class="artist-body">
+                    <span class="artist-tag">Solo</span>
+                    <h3>MC Luanna</h3>
+                    <p>
+                        Luana Santos Oliveira, baiana radicada em São
+                        Paulo, referência do trap feminino nacional, com
+                        letras que criticam o machismo do mercado musical.
+                    </p>
+                    <div class="artist-track">
+                        <a href="https://open.spotify.com/intl-pt/track/34rkfZfnqUhtzLXszfV2su?si=38041d73c3924428" class="track-link" target="_blank" rel="noopener" title="Abrir no Spotify"><i class="bi bi-music-note-beamed"></i> Kit Rosa <i class="bi bi-spotify"></i></a>
+                        <button type="button" class="btn-analisar" data-bs-toggle="modal" data-bs-target="#modalKitRosa">
+                            <i class="bi bi-bar-chart-fill"></i> Analisar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== SLIPMAMI ===================== -->
+        <div class="col-md-6 col-lg-3">
+            <div class="artist-card">
+                <div class="artist-avatar">
+                    <img src="{{ url_for('static', filename='img/Slipmami.jpg') }}" alt="Tasha & Tracie">
+                </div>
+                <div class="artist-body">
+                    <span class="artist-tag">Solo</span>
+                    <h3>Slipmami</h3>
+                    <p>
+                        Yasmim Pinto da Silva, rapper carioca de Duque de
+                        Caxias, mistura rap, trap e rock em letras
+                        irreverentes e de forte identidade visual.
+                    </p>
+                    <div class="artist-track">
+                        <a href="https://open.spotify.com/intl-pt/track/17YRNfsbyA7wTOEhANAyK7?si=7d4bbb23407e430a" class="track-link" target="_blank" rel="noopener" title="Abrir no Spotify"><i class="bi bi-music-note-beamed"></i> Oompa Loompa <i class="bi bi-spotify"></i></a>
+                        <button type="button" class="btn-analisar" data-bs-toggle="modal" data-bs-target="#modalOompa">
+                            <i class="bi bi-bar-chart-fill"></i> Analisar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="section-block mt-5">
+        <div class="card-trap">
+            <h2 style="font-size:1.8rem;">Por que essas vozes importam?</h2>
+            <p style="color:#c9c9c9; margin:0;">
+                Ao ocupar um cenário musical historicamente dominado por
+                homens, essas artistas usam suas letras para denunciar
+                desigualdades, afirmar sua identidade e inspirar outras
+                mulheres — transformando o trap em um instrumento de
+                representatividade e transformação social.
+            </p>
+        </div>
+    </section>
+
+</div>
+
+
+<!-- =========================================================
+     MODAIS DE ANÁLISE — uma por música
+========================================================= -->
+
+<!-- KARISMA — Tasha & Tracie -->
+<div class="modal fade modal-trap" id="modalKarisma" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <span class="modal-eyebrow">Análise da faixa</span>
+                    <h2 class="modal-title">Karisma
+                        <small>Tasha &amp; Tracie</small>
+                    </h2>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="capa-musica">
+                            <i class="bi bi-image"></i>
+                            <img src="{{ url_for('static', filename='img/karisma.jpg') }}" alt="Capa - Karisma">
+                        </div>
+                        <div class="links-musica">
+                            <a href="https://open.spotify.com/intl-pt/track/5zooAT8my0NlTSoZgs92ac?si=2149283234e847a1" class="link-plataforma spotify" target="_blank" rel="noopener">
+                                <i class="bi bi-spotify"></i> Spotify
+                            </a>
+                            <a href="https://youtu.be/9Q3KF7hiuF8?si=jgIRVXikbS5IX1nq" class="link-plataforma youtube" target="_blank" rel="noopener">
+                                <i class="bi bi-youtube"></i> YouTube
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="analise-texto">
+                            <h4>Contexto</h4>
+                            <p>
+                                Em "Karisma", Tasha &amp; Tracie constroem um
+                                discurso de autoconfiança e liberdade,
+                                reforçando a presença da dupla como
+                                referência de afirmação da mulher negra
+                                dentro do rap e do trap nacional.
+                            </p>
+                            <h4>Leitura à luz da pesquisa</h4>
+                            <p>
+                                A faixa dialoga diretamente com o eixo de
+                                empoderamento discutido na revisão teórica:
+                                ocupar espaço, ganhar visibilidade e
+                                inspirar outras mulheres através da
+                                afirmação da própria identidade e presença.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BIG D!!!!! — Duquesa -->
+<div class="modal fade modal-trap" id="modalBigD" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <span class="modal-eyebrow">Análise da faixa</span>
+                    <h2 class="modal-title">Big D!!!!!
+                        <small>Duquesa</small>
+                    </h2>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="capa-musica">
+                            <i class="bi bi-image"></i>
+                            <img src="{{ url_for('static', filename='img/bigd.jpg') }}" alt="Bid D!!!">
+                        </div>
+                        <div class="links-musica">
+                            <a href="https://open.spotify.com/intl-pt/track/6YSAbJ9fQCMYcCqaYwSIph?si=194d01b7db0249e0" class="link-plataforma spotify" target="_blank" rel="noopener">
+                                <i class="bi bi-spotify"></i> Spotify
+                            </a>
+                            <a href="https://youtu.be/vvGfFg3LzIQ?si=YP3iS3olazeSmMRS" class="link-plataforma youtube" target="_blank" rel="noopener">
+                                <i class="bi bi-youtube"></i> YouTube
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="analise-texto">
+                            <h4>Contexto</h4>
+                            <p>
+                                Duquesa constrói uma narrativa de ascensão e
+                                independência financeira, reafirmando
+                                orgulho racial e recusando ser subestimada
+                                — se apresentando como referência para
+                                outras mulheres do gueto.
+                            </p>
+                            <h4>Leitura à luz da pesquisa</h4>
+                            <p>
+                                A música conecta diretamente com o conceito
+                                de racismo genderizado: raça, gênero e
+                                classe aparecem entrelaçados no discurso de
+                                superação, e a autoestima funciona como
+                                resposta às desigualdades enfrentadas no
+                                cotidiano e no próprio mercado musical.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- DILÚVIO — Karol Conká -->
+<div class="modal fade modal-trap" id="modalDiluvio" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <span class="modal-eyebrow">Análise da faixa</span>
+                    <h2 class="modal-title">Dilúvio
+                        <small>Karol Conká</small>
+                    </h2>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="capa-musica">
+                            <i class="bi bi-image"></i>
+                            <img src="{{ url_for('static', filename='img/diluvio.jpg') }}" alt="Dilúvio">
+                        </div>
+                        <div class="links-musica">
+                            <a href="https://open.spotify.com/intl-pt/track/2munsJnflycsB0jAPgDxaU?si=9deb8cb1bbae4449" class="link-plataforma spotify" target="_blank" rel="noopener">
+                                <i class="bi bi-spotify"></i> Spotify
+                            </a>
+                            <a href="https://youtu.be/AqdUj8-t5Go?si=V2HYE-TzyBYYvThN" class="link-plataforma youtube" target="_blank" rel="noopener">
+                                <i class="bi bi-youtube"></i> YouTube
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="analise-texto">
+                            <h4>Contexto</h4>
+                            <p>
+                                "Dilúvio" tem tom introspectivo: fala sobre
+                                atravessar períodos de estresse e incerteza
+                                até encontrar alívio — a ideia central é a
+                                persistência diante da dor, resumida na
+                                promessa de que a tempestade um dia passa.
+                            </p>
+                            <h4>Leitura à luz da pesquisa</h4>
+                            <p>
+                                A faixa ilustra a música como espaço de
+                                elaboração de experiências pessoais, indo
+                                além do entretenimento para se tornar
+                                reflexão sobre resistência emocional —
+                                reforçando a ideia de território de
+                                disputas, lutas e resistências discutida na
+                                revisão teórica.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- NÃO LEMBRO DA MINHA INFÂNCIA — Ebony -->
+<div class="modal fade modal-trap" id="modalInfancia" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <span class="modal-eyebrow">Análise da faixa</span>
+                    <h2 class="modal-title">Não lembro da minha infância
+                        <small>Ebony</small>
+                    </h2>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="capa-musica">
+                            <i class="bi bi-image"></i>
+                            <img src="{{ url_for('static', filename='img/naolembro.jpg') }}" alt="Não Lembro Da Minha Infância">
+                        </div>
+                        <div class="links-musica">
+                            <a href="https://open.spotify.com/intl-pt/track/6KINgKuBfCGZR6DMoJIO9H?si=633c1ca081044cd8" class="link-plataforma spotify" target="_blank" rel="noopener">
+                                <i class="bi bi-spotify"></i> Spotify
+                            </a>
+                            <a href="https://youtu.be/bMVoFtuKkk8?si=kiyRJJAyKzoX22KH" class="link-plataforma youtube" target="_blank" rel="noopener">
+                                <i class="bi bi-youtube"></i> YouTube
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="analise-texto">
+                            <h4>Contexto</h4>
+                            <p>
+                                Ebony resgata memórias de infância para
+                                falar sobre formação de identidade,
+                                enquanto publicamente já declarou que a
+                                estrutura do rap foi pensada para o homem —
+                                reivindicando espaço a partir de sua própria
+                                trajetória.
+                            </p>
+                            <h4>Leitura à luz da pesquisa</h4>
+                            <p>
+                                A faixa conversa com o eixo de afirmação de
+                                identidade: falar da própria história de
+                                vida se torna forma de resistência dentro
+                                de um gênero musical historicamente
+                                dominado por vozes masculinas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- O QUE A JÚLIA VAI SER — Ajuliacosta -->
+<div class="modal fade modal-trap" id="modalJulia" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <span class="modal-eyebrow">Análise da faixa</span>
+                    <h2 class="modal-title">O que a Júlia vai ser
+                        <small>Ajulliacosta</small>
+                    </h2>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="capa-musica">
+                            <i class="bi bi-image"></i>
+                            <img src="{{ url_for('static', filename='img/oqueajulia.jpg') }}" alt="Oque a Júlia vai ser?">
+                        </div>
+                        <div class="links-musica">
+                            <a href="https://open.spotify.com/intl-pt/track/7LzAlJ41rNAtvLJZC7xnks?si=a53cf47ebaa34508" class="link-plataforma spotify" target="_blank" rel="noopener">
+                                <i class="bi bi-spotify"></i> Spotify
+                            </a>
+                            <a href="https://youtu.be/vYP14rseOEo?si=oHUqlljFHnKpu504" class="link-plataforma youtube" target="_blank" rel="noopener">
+                                <i class="bi bi-youtube"></i> YouTube
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="analise-texto">
+                            <h4>Contexto</h4>
+                            <p>
+                                A faixa parte de uma pergunta existencial —
+                                "o que ela vai ser" — para refletir sobre
+                                autodescoberta, expectativas e construção
+                                de identidade de uma jovem mulher negra
+                                periférica.
+                            </p>
+                            <h4>Leitura à luz da pesquisa</h4>
+                            <p>
+                                Essa busca por autodefinição dialoga com a
+                                ideia de que a música é espaço onde
+                                artistas afirmam sua identidade ao falar
+                                sobre sua própria trajetória e seus planos
+                                de vida.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- P.I.T.T.Y. — Nanda Tsunami -->
+<div class="modal fade modal-trap" id="modalPitty" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <span class="modal-eyebrow">Análise da faixa</span>
+                    <h2 class="modal-title">P.I.T.T.Y.
+                        <small>Nanda Tsunami</small>
+                    </h2>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="capa-musica">
+                            <i class="bi bi-image"></i>
+                            <img src="{{ url_for('static', filename='img/pitty.jpg') }}" alt="P.i.T.T.Y?">
+                        </div>
+                        <div class="links-musica">
+                            <a href="https://open.spotify.com/intl-pt/track/5L0d4gFfxGNITmevcFfHnA?si=33ce95527be449f2" class="link-plataforma spotify" target="_blank" rel="noopener">
+                                <i class="bi bi-spotify"></i> Spotify
+                            </a>
+                            <a href="https://youtu.be/LcldH2JNN8U?si=W0JIsYzsTn7KvpjE" class="link-plataforma youtube" target="_blank" rel="noopener">
+                                <i class="bi bi-youtube"></i> YouTube
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="analise-texto">
+                            <h4>Contexto</h4>
+                            <p>
+                                Nanda Tsunami se apropria de um rótulo
+                                pejorativo usado contra mulheres e o
+                                transforma em afirmação de autonomia sobre
+                                a própria sexualidade e imagem.
+                            </p>
+                            <h4>Leitura à luz da pesquisa</h4>
+                            <p>
+                                A faixa exemplifica a disputa de sentido
+                                discutida na revisão teórica: em vez de
+                                aceitar a objetificação predominante nas
+                                letras do gênero, a artista reverte o
+                                discurso a seu favor, transformando
+                                julgamento em empoderamento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- KIT ROSA — MC Luanna -->
+<div class="modal fade modal-trap" id="modalKitRosa" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <span class="modal-eyebrow">Análise da faixa</span>
+                    <h2 class="modal-title">Kit Rosa
+                        <small>MC Luanna</small>
+                    </h2>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="capa-musica">
+                            <i class="bi bi-image"></i>
+                            <img src="{{ url_for('static', filename='img/kitrosa.jpg') }}" alt="Kit Rosa">
+                        </div>
+                        <div class="links-musica">
+                            <a href="https://open.spotify.com/intl-pt/track/34rkfZfnqUhtzLXszfV2su?si=267187707ab648c2" class="link-plataforma spotify" target="_blank" rel="noopener">
+                                <i class="bi bi-spotify"></i> Spotify
+                            </a>
+                            <a href="https://youtu.be/Eluz4QeAE6s?si=vxBv8XzAq5Ile17f" class="link-plataforma youtube" target="_blank" rel="noopener">
+                                <i class="bi bi-youtube"></i> YouTube
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="analise-texto">
+                            <h4>Contexto</h4>
+                            <p>
+                                MC Luanna associa feminilidade e autocuidado
+                                a uma postura de força, afirmando que se
+                                cuidar e se valorizar também é uma forma de
+                                resistência.
+                            </p>
+                            <h4>Leitura à luz da pesquisa</h4>
+                            <p>
+                                A faixa reforça a ideia de que autoestima e
+                                afirmação da identidade caminham juntas: ao
+                                celebrar sua própria imagem, a artista
+                                confronta padrões que historicamente
+                                deram pouco espaço e reconhecimento a
+                                mulheres negras na música.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- OOMPA LOOMPA — Slipmami -->
+<div class="modal fade modal-trap" id="modalOompa" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <span class="modal-eyebrow">Análise da faixa</span>
+                    <h2 class="modal-title">Oompa Loompa
+                        <small>Slipmami</small>
+                    </h2>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="capa-musica">
+                            <i class="bi bi-image"></i>
+                            <img src="{{ url_for('static', filename='img/ompa.jpg') }}" alt="Oompa Loompa">
+                        </div>
+                        <div class="links-musica">
+                            <a href="https://open.spotify.com/intl-pt/track/17YRNfsbyA7wTOEhANAyK7?si=100b694bc995492f" class="link-plataforma spotify" target="_blank" rel="noopener">
+                                <i class="bi bi-spotify"></i> Spotify
+                            </a>
+                            <a href="https://youtu.be/bGdlXTZc7F0?si=dHJoW2QUm5wavt48" class="link-plataforma youtube" target="_blank" rel="noopener">
+                                <i class="bi bi-youtube"></i> YouTube
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="analise-texto">
+                            <h4>Contexto</h4>
+                            <p>
+                                Slipmami usa humor, irreverência e uma
+                                estética visual marcante para construir uma
+                                identidade artística que foge de padrões
+                                convencionais do trap.
+                            </p>
+                            <h4>Leitura à luz da pesquisa</h4>
+                            <p>
+                                Essa liberdade estética também é política:
+                                ao recusar se encaixar em um único padrão
+                                de mulher negra na música, a artista amplia
+                                o repertório de representações possíveis
+                                dentro do gênero.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
