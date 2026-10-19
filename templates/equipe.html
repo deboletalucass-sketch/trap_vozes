@@ -22,8 +22,9 @@
     <div class="row g-4 mb-5">
         <div class="col-md-6">
             <div class="team-card">
-                <div class="team-avatar"><img src="static/img/lucas.jpg" ></div>
-                
+                <div class="team-avatar" style="overflow:hidden;">
+                    <img src="{{ url_for('static', filename='img/lucas.jpg') }}" alt="Lucas" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                </div>
                 <h3>Lucas Gabriel Rocha Deboleta</h3>
                 <span class="team-role">Pesquisador</span>
                 <p>Curso Técnico em Informática Integrado ao Ensino Médio</p>
@@ -31,7 +32,9 @@
         </div>
         <div class="col-md-6">
             <div class="team-card">
-                <div class="team-avatar"><img src="static/img/helena.jpg" ></div>
+                 <div class="team-avatar" style="overflow:hidden;">
+                    <img src="{{ url_for('static', filename='img/Helena.jpg') }}" alt="Lucas" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                </div>
                 <h3>Helena Monteiro Coracini</h3>
                 <span class="team-role">Pesquisadora</span>
                 <p>Curso Técnico em Informática Integrado ao Ensino Médio</p>
@@ -46,7 +49,9 @@
     <div class="row g-4 mb-5">
         <div class="col-md-6">
             <div class="team-card">
-                <div class="team-avatar"><img src="static/img/josimar.jpg" ></div>
+                 <div class="team-avatar" style="overflow:hidden;">
+                    <img src="{{ url_for('static', filename='img/Josimar.jpg') }}" alt="Lucas" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                </div>
                 <h3>Prof. Dr. Josimar Priori</h3>
                 <span class="team-role">Orientador</span>
                 <p>Instituto Federal do Paraná – Campus Paranavaí</p>
@@ -54,7 +59,9 @@
         </div>
         <div class="col-md-6">
             <div class="team-card">
-               <div class="team-avatar"><img src="static/img/fabiano.jpg" ></div>
+                 <div class="team-avatar" style="overflow:hidden;">
+                    <img src="{{ url_for('static', filename='img/Fabiano.jpg') }}" alt="Lucas" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                </div>
                 <h3>Fabiano Utiyama</h3>
                 <span class="team-role">Professor da disciplina</span>
                 <p>Instituto Federal do Paraná – Campus Paranavaí</p>
